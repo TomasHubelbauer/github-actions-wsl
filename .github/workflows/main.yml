@@ -7,7 +7,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run the script
       run: |
-        powershell
+        $PSVersionTable
         Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
         wsl
         bash
