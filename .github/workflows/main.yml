@@ -1,0 +1,12 @@
+name: ci
+on: push
+jobs:
+  ci:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run the script
+      run: |
+        wsl
+        bash
+        ubuntu
