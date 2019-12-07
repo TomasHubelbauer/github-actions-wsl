@@ -8,7 +8,7 @@ jobs:
     - name: Run the script
       shell: powershell
       run: |
-        Set-PSDebug -Trace 2
+        bash --version
         Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName Microsoft-Windows-Subsystem-Linux
         Dism /online /Get-FeatureInfo /FeatureName:Microsoft-Windows-Subsystem-Linux
         #wsl
