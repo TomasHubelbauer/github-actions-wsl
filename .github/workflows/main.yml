@@ -6,6 +6,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Run the script
+      shell: powershell
       run: |
         #Requires -RunAsAdministrator
         Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
