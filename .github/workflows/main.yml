@@ -8,8 +8,8 @@ jobs:
     - name: Run the script
       shell: powershell
       run: |
-        #Requires -RunAsAdministrator
-        Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+        Set-PSDebug -Trace 2
+        Enable-WindowsOptionalFeature -Online -NoRestart -FeatureName Microsoft-Windows-Subsystem-Linux
         wsl
         bash
         ubuntu
