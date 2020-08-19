@@ -13,3 +13,8 @@ There is a request to add WSL to the default Windows image:
 https://github.com/actions/virtual-environments/issues/50
 
 ## To-Do
+
+### Try WSL2 out as it seems to be a part of the Windows image used now
+
+As per https://github.com/actions/virtual-environments/issues/50 WSL2 seems
+to be a part of the latest Windows image.
