@@ -21,3 +21,5 @@ I would like to find the most minimal scripts needed to get WSL1 and WSL2 print
 
 > The service cannot be started, either because it is disabled or because it has
 no enabled devices associated with it. 
+
+`wsl --set-default-version 2` just prints as if it was started with no options.
