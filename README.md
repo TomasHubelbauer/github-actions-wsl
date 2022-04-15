@@ -1,20 +1,9 @@
 # GitHub Actions WSL
 
-Is there WSL on the Windows-based GitHub Actions agents?
-
-https://docs.microsoft.com/en-us/windows/wsl/install-on-server
-
-Turns out it is impossible to use because enabling WSL requires the agent
-to restart which is impossible in the GitHub Actions agents, as confirmed
-by GitHub support.
-
-There is a request to add WSL to the default Windows image:
-
-https://github.com/actions/virtual-environments/issues/50
+GitHub Actions Windows images have WSL.
 
 ## To-Do
 
-### Try WSL2 out as it seems to be a part of the Windows image used now
+### Study actions/setup-wsl to see how it could be useful to me
 
-As per https://github.com/actions/virtual-environments/issues/50 WSL2 seems
-to be a part of the latest Windows image.
+https://github.com/marketplace/actions/setup-wsl

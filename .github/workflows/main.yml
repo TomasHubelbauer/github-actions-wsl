@@ -6,14 +6,16 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Run "wsl --list --online"
-      #shell: powershell
       run: wsl --list --online
+    
+    - name: Run "wsl --install Ubuntu"
+      run: wsl --install Ubuntu
+
     - name: Run "wsl --status"
-      #shell: powershell
       run: wsl --status
+    
     - name: Run "bash --version"
-      #shell: powershell
       run: bash --version
+    
     - name: Run "wsl whoami"
-      #shell: powershell
       run: wsl whoami
