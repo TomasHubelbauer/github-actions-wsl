@@ -8,8 +8,12 @@ GitHub Actions Windows images have WSL.
 
 https://github.com/marketplace/actions/setup-wsl
 
-### Fix the issue with the kernel - see if WSL2 is needed or WSL1 will work too
+### Fix the issue with the kernel and figure out why "no installed distros"
 
+The current workflow fails `wsl whoami` because thee is distro installed even
+though `wsl --list --all` shows Ubuntu got installed correctyly.
+
+Another issue I was facing was about the kernel with a link to this:
 https://docs.microsoft.com/en-us/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
 
 This will fix WSL2 I guess but I wonder if WSL1 can be made to work, too.

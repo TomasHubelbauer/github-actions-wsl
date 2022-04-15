@@ -15,7 +15,7 @@ jobs:
       run: bash --version
     
     - name: Run "wsl whoami"
-      run: wsl whoami
+      run: wsl --distribution Ubuntu whoami
 
     - name: Run "wsl --status"
       run: wsl --status
