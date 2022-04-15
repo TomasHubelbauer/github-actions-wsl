@@ -16,3 +16,8 @@ This will fix WSL2 I guess but I wonder if WSL1 can be made to work, too.
 
 I would like to find the most minimal scripts needed to get WSL1 and WSL2 print
 `whoami`.
+
+`wsl --update` won't run because of this error:
+
+> The service cannot be started, either because it is disabled or because it has
+no enabled devices associated with it. 
