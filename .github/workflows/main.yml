@@ -9,7 +9,7 @@ jobs:
       run: wsl --list --online
     
     - name: Run "wsl --install Ubuntu"
-      run: wsl --install Ubuntu
+      run: wsl --install --distribution Ubuntu
 
     - name: Run "wsl --status"
       run: wsl --status
