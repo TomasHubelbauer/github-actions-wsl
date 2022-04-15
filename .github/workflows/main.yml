@@ -5,20 +5,17 @@ jobs:
   main:
     runs-on: windows-latest
     steps:
-    - name: Run "wsl --list --online"
-      run: wsl --list --online
-    
     - name: Run "wsl --install Ubuntu"
       run: wsl --install --distribution Ubuntu
 
-    - name: Run "wsl --list --online"
-      run: wsl --list --online
+    - name: Run "wsl --list --all"
+      run: wsl --list --all
 
-    - name: Run "wsl --status"
-      run: wsl --status
-    
     - name: Run "bash --version"
       run: bash --version
     
     - name: Run "wsl whoami"
       run: wsl whoami
+
+    - name: Run "wsl --status"
+      run: wsl --status
